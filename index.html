@@ -1,45 +1,125 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  </head>
-  <body>
-	  <nav class="navbar" role="navigation" aria-label="main navigation">
-		  <div class="navbar-brand">
-			  <a class="navbar-item">
-				  <img class="image" src="assets/nauLogo.png" alt="NAU">
-			  </a>
-		  </div
-		  <div class="navbar-menu">
-			<div class="navbar-start">
-				<a class="navbar-item is-tab is-active" href="index.html">
-					Home
-				</a>
-				<a class="navbar-item is-tab" href="desc.html">
-					Project Description
-				</a>
-				<a class="navbar-item is-tab" href="data.html">
-					Data Set
-				</a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Campus Diets - Introduction</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <style>td {border-style: solid; border-width: 1px; padding: 0px 3px 0px 3px; text-align: center !important;}</style>
+
+		<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<div class="navbar-burger burger" id="burger" data-target="navbartabs">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
-		  </div>
-	  </nav>
-  <section class="section">
-    <div class="container">
+			<div class="navbar-start">
+				<div class="navbar-menu is-hidden-desktop" id="navbartabs">
+					<a class="navbar-item is-tab is-active" href="./index.html">Home</a>
+					<a class="navbar-item is-tab" href="./about.html">About Us</a>
+					<a class="navbar-item is-tab" href="./project.html">Project</a>
+				</div>
+				<div class="navbar-tabs is-hidden-touch">
+					<a class="navbar-item is-tab is-active" href="./index.html">Home</a>
+					<a class="navbar-item is-tab" href="./about.html">About Us</a>
+					<a class="navbar-item is-tab" href="./project.html">Project</a>
+				</div>
+			</div>
+			</div>
+		</nav>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+				<h1 class="title has-text-centered">
+                    CS 499 Semester Project - Alex Kahn, Kellen Ross, Connor Schwirian
+                </h1>
 
+                <p class="subtitle has-text-centered">
+                    A descriptive analysis of food options near colleges and
+                    universities across the United States.
+                </p>
+                <hr>
+				<h2 class="subtitle">
+					Project Introduction
+				</h2>
+                <p>
+                    For our research project, the initial question we wanted to
+					answer was if there is a correlation between the quality of
+					school a student attends to the quality of food available to
+					those students. If we found that there was a correlation,
+					was it directly related to the school levels being affected
+					by income level? This project will show if lower-level
+					college campuses are targeted by lower-cost fast food
+					chains, and if higher-level schools are more surrounded by
+					higher quality food establishments.
+                </p>
+                <hr>
+				<h2 class="subtitle">
+					Project Plan
+				</h2>
+                <p>
+                    To answer this question, our team gathered data based on two
+					different categories: school levels and food quality.
+					The first category is discrete with values of:
+					<bl>
+						<li>Community College</li>
+						<li>State University</li>
+						<li>Private University</li>
+						<li>Ivy League</li>
+					</bl>
+					<br>
+					And the second category is also discrete wth values:
+					<bl>
+						<li>Fast Food</li>
+						<li>Sitdown Restaurant</li>
+						<li>Grocery Store</li>
+					</bl>
+					<br>
+					The other metrics we chose to measure by were the distance
+					from a campus to some food establishment, chosen from a list
+					of entries in the three food categories, and lists of school
+					campuses compiled for each level.
 
+                </p>
+				<hr>
 
-		<h1 class="title">
-		Hello World
-		</h1>
-		<p class="subtitle">
-		My first website with <strong>Bulma</strong>!
-		</p>
-    </div>
-  </section>
-  </body>
+				<div class="columns is-centered">
+
+					<div class="column has-text-centered">
+						<h2 class="subtitle">
+							Global metric
+						</h2>
+						<figure>
+							<img src="global.PNG" alt="Global metric">
+						</figure>
+						This metric shows what proportion of the overall list of
+						requests were found near that campus. This globally
+						compares campuses' scores in categories to each other,
+						based on who found a certain ratio of the request list.
+					</div>
+
+					<div class="column has-text-centered">
+						<h2 class="subtitle">
+							Local metric
+						</h2>
+						<br>
+						<figure>
+							<img src="local.PNG" alt="Local metric">
+						</figure>
+						This metric shows what proportion of a food category
+						near a campus is made up of each category. This locally
+						measures scores, finding what percentage of food
+						businesses near a campus are made up of a category.
+					</div>
+
+				</div>
+
+            </div>
+        </section>
+    </body>
 </html>

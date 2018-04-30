@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Campus Diets - Introduction</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <style>td {border-style: solid; border-width: 1px; padding: 0px 3px 0px 3px; text-align: center !important;}</style>
+
+		<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<div class="navbar-burger burger" id="burger" data-target="navbartabs">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="navbar-start">
+				<div class="navbar-menu is-hidden-desktop" id="navbartabs">
+					<a class="navbar-item is-tab is-active" href="./index.html">Home</a>
+					<a class="navbar-item is-tab" href="./about.html">About Us</a>
+					<a class="navbar-item is-tab" href="./project.html">Project</a>
+				</div>
+				<div class="navbar-tabs is-hidden-touch">
+					<a class="navbar-item is-tab is-active" href="./index.html">Home</a>
+					<a class="navbar-item is-tab" href="./about.html">About Us</a>
+					<a class="navbar-item is-tab" href="./project.html">Project</a>
+				</div>
+			</div>
+			</div>
+		</nav>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+				<h1 class="title has-text-centered">
+                    CS 499 Semester Project - Alex Kahn, Kellen Ross, Connor Schwirian
+                </h1>
+
+                <p class="subtitle has-text-centered">
+                    A descriptive analysis of food options near colleges and
+                    universities across the United States.
+                </p>
+                <hr>
+				<h2 class="subtitle">
+					Analysis Overview
+				</h2>
+                <p>
+                    For our research we used the distances from college campuses
+                    to different food service establishments. We collected the
+                    data through the Google Maps Distance API. Distances were
+                    calculated by the length of a path from the Google Maps
+                    location of a campus to the address of a particular
+                    establishment. We made use of the Google Maps API to
+                    retrieve lists of local establishments and their distances
+                    from the campus. We then categorized the establishments
+                    based on the level of college campus chosen as the origin.
+                </p>
+				<br>
+				<p>Our project is open-source on Github at <a href="https://github.com/KahnAlexander/NAU-CS499-SP">
+					https://github.com/KahnAlexander/NAU-CS499-SP</a>. Our data collected
+					from this project is also available there.</p>
+                <hr>
+				<h2 class="subtitle">
+					Data Visualizations
+				</h2>
+                <p>
+                    To analyze our data, we used an online tool called
+                    <a href="http://www.lock5stat.com/StatKey/">Statkey</a>,
+                    which allowed us to easily generate graphs of our results. A
+                    single point on one of these graphs represents a single
+                    establishment we included in our research. The x-axis of
+                    these graphs represents the distance from the particular
+                    establishment to the particular campus. The y-axis
+                    categorizes the establishment as fast food, grocery, or
+                    sitdown. These are preliminary results and do not represent
+                    the final product of our research. However, they do provide
+                    a solid model for what we expect to find in the finalized
+                    version of our project.
+                </p>
+                <br>
+                <table>
+                    <tr>
+                       <td>Key:</td>
+                       <td></td>
+                    </tr>
+                    <tr>
+                       <td>s</td>
+                       <td>Sitdown Restaurants</td>
+                    </tr>
+                    <tr>
+                       <td>g</td>
+                       <td>Grocery Stores</td>
+                    </tr>
+                    <tr>
+                       <td>f</td>
+                       <td>Fast Food Restaurants</td>
+                    </tr>
+                </table>
+
+				<br></br>
+
+				<div class="columns is-centered">
+
+					<div class="column is-4 has-text-centered">
+
+						<div class="card">
+						  <div class="card-content">
+						    <div class="content">
+								<figure class="image is-16by9">
+							      <a href="all.PNG"><img src="all.PNG" alt="All data"></a>
+							    </figure>
+
+						      All data aggregated in one graph.
+						    </div>
+						  </div>
+						</div>
+
+						<br></br>
+
+						<div class="card">
+						  <div class="card-content">
+						    <div class="content">
+								<figure class="image is-16by9">
+							      <a href="su.PNG"><img src="su.PNG" alt="All data"></a>
+							    </figure>
+
+						      State University data aggregated in one graph.
+						    </div>
+						  </div>
+						</div>
+
+						<br></br>
+
+						<div class="card">
+						  <div class="card-content">
+						    <div class="content">
+								<figure class="image is-16by9">
+							      <a href="il.PNG"><img src="il.PNG" alt="Ivy League data"></a>
+							    </figure>
+
+						      Ivy League data aggregated in one graph.
+						    </div>
+						  </div>
+						</div>
+
+					</div>
+
+					<div class="column is-4 has-text-centered">
+						<div class="card">
+						  <div class="card-content">
+						    <div class="content">
+								<figure class="image is-16by9">
+							      <a href="cc.PNG"><img src="cc.PNG" alt="All data"></a>
+							    </figure>
+
+						      Community College data aggregated in one graph.
+						    </div>
+						  </div>
+						</div>
+
+						<br></br>
+
+						<div class="card">
+						  <div class="card-content">
+						    <div class="content">
+								<figure class="image is-16by9">
+							      <a href="pu.PNG"><img src="pu.PNG" alt="Private uni data"></a>
+							    </figure>
+
+						      Private University data aggregated in one graph.
+						    </div>
+						  </div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+            </div>
+        </section>
+    </body>
+</html>
